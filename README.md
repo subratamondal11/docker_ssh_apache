@@ -6,7 +6,7 @@ Steps:
 
 download the repository
 
-cd to the repository directory
+##cd to the repository directory
 $ cd docker_ssh_apache
 
 create docker image (dont forget the . in end of the command)
