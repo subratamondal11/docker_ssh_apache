@@ -15,8 +15,8 @@ RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so
 ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
-COPY my_script.sh /usr/local/bin/my_script.sh
-RUN chmod +x /usr/local/bin/my_script.sh
+COPY timecounter.sh /usr/local/bin/timecounter.sh
+RUN chmod +x /usr/local/bin/timecounter.sh
 
 EXPOSE 22 80
-CMD ["/usr/local/bin/my_script.sh"]
+CMD ["/usr/local/bin/timecounter.sh"]
