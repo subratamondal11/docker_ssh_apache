@@ -5,7 +5,7 @@ maintainer Subrata Mondal <subratamondal11@gmail.com>
 RUN apt-get update && apt-get install -y openssh-server && apt-get install -y apache2
 RUN mkdir /var/run/sshd
 
-# provide password o plain text
+# provide password in plain text
 RUN echo 'root:1234' | chpasswd
 
 # Permit root to login via ssh
