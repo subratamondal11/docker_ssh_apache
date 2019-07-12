@@ -4,6 +4,7 @@ create a docker image with ssh and apache2 services with Ubunt 14.04 base
 
 ### Details:
 user1 is created, password is 1234
+
 user1 has sudo access
 
 #### Steps:
