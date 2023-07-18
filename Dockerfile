@@ -20,7 +20,7 @@ RUN echo "export VISIBLE=now" >> /etc/profile
 
 COPY timecounter.sh /usr/local/bin/timecounter.sh
 RUN chmod +x /usr/local/bin/timecounter.sh
-RUN chmod 777 /var/www/html
+RUN chmod -R 777 /var/www/html
 
 EXPOSE 22 80
 CMD ["/usr/local/bin/timecounter.sh"]
